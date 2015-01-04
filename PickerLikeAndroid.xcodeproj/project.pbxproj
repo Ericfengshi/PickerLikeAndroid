@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA85C2B1A525DC400DB115F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA85C2A1A525DC400DB115F /* UIKit.framework */; };
+		9FA85C2D1A525DC400DB115F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA85C2C1A525DC400DB115F /* Foundation.framework */; };
+		9FA85C2F1A525DC400DB115F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA85C2E1A525DC400DB115F /* CoreGraphics.framework */; };
+		9FA85C351A525DC500DB115F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FA85C331A525DC500DB115F /* InfoPlist.strings */; };
+		9FA85C371A525DC500DB115F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA85C361A525DC500DB115F /* main.m */; };
+		9FA85C3B1A525DC500DB115F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA85C3A1A525DC500DB115F /* AppDelegate.m */; };
+		9FA85C3E1A525DC500DB115F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA85C3D1A525DC500DB115F /* ViewController.m */; };
+		9FA85C411A525DC500DB115F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA85C3F1A525DC500DB115F /* ViewController.xib */; };
+		9FA85C491A52603600DB115F /* PickerLikeAndroidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA85C481A52603600DB115F /* PickerLikeAndroidView.m */; };
+		9FD50C251A57E46100D7D640 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50C151A57E46100D7D640 /* db.sqlite */; };
+		9FD50C261A57E46100D7D640 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C181A57E46100D7D640 /* FMDatabase.m */; };
+		9FD50C271A57E46100D7D640 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C1A1A57E46100D7D640 /* FMDatabaseAdditions.m */; };
+		9FD50C281A57E46100D7D640 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C1C1A57E46100D7D640 /* FMDatabasePool.m */; };
+		9FD50C291A57E46100D7D640 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C1E1A57E46100D7D640 /* FMDatabaseQueue.m */; };
+		9FD50C2A1A57E46100D7D640 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C211A57E46100D7D640 /* FMResultSet.m */; };
+		9FD50C2B1A57E46100D7D640 /* Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C241A57E46100D7D640 /* Logic.m */; };
+		9FD50C301A57E9B600D7D640 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD50C2F1A57E9B600D7D640 /* libsqlite3.dylib */; };
+		9FD50C471A58078200D7D640 /* PickerDataTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD50C461A58078200D7D640 /* PickerDataTableView.m */; };
+		9FD50C661A59168E00D7D640 /* PickerLikeAndroid.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FD50C651A59168E00D7D640 /* PickerLikeAndroid.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9FA85C261A525DC400DB115F /* PickerLikeAndroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerLikeAndroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA85C2A1A525DC400DB115F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FA85C2C1A525DC400DB115F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FA85C2E1A525DC400DB115F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FA85C321A525DC500DB115F /* PickerLikeAndroid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickerLikeAndroid-Info.plist"; sourceTree = "<group>"; };
+		9FA85C341A525DC500DB115F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FA85C361A525DC500DB115F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FA85C381A525DC500DB115F /* PickerLikeAndroid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickerLikeAndroid-Prefix.pch"; sourceTree = "<group>"; };
+		9FA85C391A525DC500DB115F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FA85C3A1A525DC500DB115F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FA85C3C1A525DC500DB115F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9FA85C3D1A525DC500DB115F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9FA85C401A525DC500DB115F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9FA85C471A52603600DB115F /* PickerLikeAndroidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerLikeAndroidView.h; sourceTree = "<group>"; };
+		9FA85C481A52603600DB115F /* PickerLikeAndroidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerLikeAndroidView.m; sourceTree = "<group>"; };
+		9FD50C151A57E46100D7D640 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		9FD50C171A57E46100D7D640 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		9FD50C181A57E46100D7D640 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		9FD50C191A57E46100D7D640 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9FD50C1A1A57E46100D7D640 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9FD50C1B1A57E46100D7D640 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		9FD50C1C1A57E46100D7D640 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		9FD50C1D1A57E46100D7D640 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9FD50C1E1A57E46100D7D640 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		9FD50C1F1A57E46100D7D640 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		9FD50C201A57E46100D7D640 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		9FD50C211A57E46100D7D640 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9FD50C231A57E46100D7D640 /* Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
+		9FD50C241A57E46100D7D640 /* Logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logic.m; sourceTree = "<group>"; };
+		9FD50C2F1A57E9B600D7D640 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9FD50C451A58078200D7D640 /* PickerDataTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerDataTableView.h; sourceTree = "<group>"; };
+		9FD50C461A58078200D7D640 /* PickerDataTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerDataTableView.m; sourceTree = "<group>"; };
+		9FD50C651A59168E00D7D640 /* PickerLikeAndroid.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PickerLikeAndroid.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA85C231A525DC400DB115F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD50C301A57E9B600D7D640 /* libsqlite3.dylib in Frameworks */,
+				9FA85C2B1A525DC400DB115F /* UIKit.framework in Frameworks */,
+				9FA85C2D1A525DC400DB115F /* Foundation.framework in Frameworks */,
+				9FA85C2F1A525DC400DB115F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA85C1B1A525DC400DB115F = {
+			isa = PBXGroup;
+			children = (
+				9FD50C651A59168E00D7D640 /* PickerLikeAndroid.bundle */,
+				9FA85C471A52603600DB115F /* PickerLikeAndroidView.h */,
+				9FA85C481A52603600DB115F /* PickerLikeAndroidView.m */,
+				9FD50C451A58078200D7D640 /* PickerDataTableView.h */,
+				9FD50C461A58078200D7D640 /* PickerDataTableView.m */,
+				9FA85C301A525DC500DB115F /* PickerLikeAndroid */,
+				9FA85C291A525DC400DB115F /* Frameworks */,
+				9FA85C271A525DC400DB115F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA85C271A525DC400DB115F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA85C261A525DC400DB115F /* PickerLikeAndroid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA85C291A525DC400DB115F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FD50C2F1A57E9B600D7D640 /* libsqlite3.dylib */,
+				9FA85C2A1A525DC400DB115F /* UIKit.framework */,
+				9FA85C2C1A525DC400DB115F /* Foundation.framework */,
+				9FA85C2E1A525DC400DB115F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FA85C301A525DC500DB115F /* PickerLikeAndroid */ = {
+			isa = PBXGroup;
+			children = (
+				9FD50C141A57E46100D7D640 /* DB */,
+				9FD50C161A57E46100D7D640 /* FMDB */,
+				9FD50C221A57E46100D7D640 /* Logic */,
+				9FA85C391A525DC500DB115F /* AppDelegate.h */,
+				9FA85C3A1A525DC500DB115F /* AppDelegate.m */,
+				9FA85C3C1A525DC500DB115F /* ViewController.h */,
+				9FA85C3D1A525DC500DB115F /* ViewController.m */,
+				9FA85C3F1A525DC500DB115F /* ViewController.xib */,
+				9FA85C311A525DC500DB115F /* Supporting Files */,
+			);
+			path = PickerLikeAndroid;
+			sourceTree = "<group>";
+		};
+		9FA85C311A525DC500DB115F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA85C321A525DC500DB115F /* PickerLikeAndroid-Info.plist */,
+				9FA85C331A525DC500DB115F /* InfoPlist.strings */,
+				9FA85C361A525DC500DB115F /* main.m */,
+				9FA85C381A525DC500DB115F /* PickerLikeAndroid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FD50C141A57E46100D7D640 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				9FD50C151A57E46100D7D640 /* db.sqlite */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		9FD50C161A57E46100D7D640 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				9FD50C171A57E46100D7D640 /* FMDatabase.h */,
+				9FD50C181A57E46100D7D640 /* FMDatabase.m */,
+				9FD50C191A57E46100D7D640 /* FMDatabaseAdditions.h */,
+				9FD50C1A1A57E46100D7D640 /* FMDatabaseAdditions.m */,
+				9FD50C1B1A57E46100D7D640 /* FMDatabasePool.h */,
+				9FD50C1C1A57E46100D7D640 /* FMDatabasePool.m */,
+				9FD50C1D1A57E46100D7D640 /* FMDatabaseQueue.h */,
+				9FD50C1E1A57E46100D7D640 /* FMDatabaseQueue.m */,
+				9FD50C1F1A57E46100D7D640 /* FMDB.h */,
+				9FD50C201A57E46100D7D640 /* FMResultSet.h */,
+				9FD50C211A57E46100D7D640 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		9FD50C221A57E46100D7D640 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9FD50C231A57E46100D7D640 /* Logic.h */,
+				9FD50C241A57E46100D7D640 /* Logic.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA85C251A525DC400DB115F /* PickerLikeAndroid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA85C441A525DC500DB115F /* Build configuration list for PBXNativeTarget "PickerLikeAndroid" */;
+			buildPhases = (
+				9FA85C221A525DC400DB115F /* Sources */,
+				9FA85C231A525DC400DB115F /* Frameworks */,
+				9FA85C241A525DC400DB115F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickerLikeAndroid;
+			productName = PickerLikeAndroid;
+			productReference = 9FA85C261A525DC400DB115F /* PickerLikeAndroid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA85C1D1A525DC400DB115F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = fengs;
+			};
+			buildConfigurationList = 9FA85C201A525DC400DB115F /* Build configuration list for PBXProject "PickerLikeAndroid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9FA85C1B1A525DC400DB115F;
+			productRefGroup = 9FA85C271A525DC400DB115F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA85C251A525DC400DB115F /* PickerLikeAndroid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA85C241A525DC400DB115F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA85C351A525DC500DB115F /* InfoPlist.strings in Resources */,
+				9FA85C411A525DC500DB115F /* ViewController.xib in Resources */,
+				9FD50C251A57E46100D7D640 /* db.sqlite in Resources */,
+				9FD50C661A59168E00D7D640 /* PickerLikeAndroid.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA85C221A525DC400DB115F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA85C371A525DC500DB115F /* main.m in Sources */,
+				9FA85C3B1A525DC500DB115F /* AppDelegate.m in Sources */,
+				9FA85C3E1A525DC500DB115F /* ViewController.m in Sources */,
+				9FA85C491A52603600DB115F /* PickerLikeAndroidView.m in Sources */,
+				9FD50C261A57E46100D7D640 /* FMDatabase.m in Sources */,
+				9FD50C271A57E46100D7D640 /* FMDatabaseAdditions.m in Sources */,
+				9FD50C281A57E46100D7D640 /* FMDatabasePool.m in Sources */,
+				9FD50C291A57E46100D7D640 /* FMDatabaseQueue.m in Sources */,
+				9FD50C2A1A57E46100D7D640 /* FMResultSet.m in Sources */,
+				9FD50C2B1A57E46100D7D640 /* Logic.m in Sources */,
+				9FD50C471A58078200D7D640 /* PickerDataTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FA85C331A525DC500DB115F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA85C341A525DC500DB115F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FA85C3F1A525DC500DB115F /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA85C401A525DC500DB115F /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA85C421A525DC500DB115F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9FA85C431A525DC500DB115F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA85C451A525DC500DB115F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PickerLikeAndroid/PickerLikeAndroid-Prefix.pch";
+				INFOPLIST_FILE = "PickerLikeAndroid/PickerLikeAndroid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9FA85C461A525DC500DB115F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PickerLikeAndroid/PickerLikeAndroid-Prefix.pch";
+				INFOPLIST_FILE = "PickerLikeAndroid/PickerLikeAndroid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA85C201A525DC400DB115F /* Build configuration list for PBXProject "PickerLikeAndroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA85C421A525DC500DB115F /* Debug */,
+				9FA85C431A525DC500DB115F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA85C441A525DC500DB115F /* Build configuration list for PBXNativeTarget "PickerLikeAndroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA85C451A525DC500DB115F /* Debug */,
+				9FA85C461A525DC500DB115F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA85C1D1A525DC400DB115F /* Project object */;
+}
